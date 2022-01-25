@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { CommonButton } from "./newUI/Button/Button";
 import { TitlePanel } from "./newUI/TitlePanel/TitlePanel";
 import { Map } from "./newUI/Forms/Organisation/Map/Map";
 import { Accounts } from "./newUI/Forms/Organisation/Accounts/Accounts";
-import { TabsPanel, TabsComponents } from "./newUI/TabsPanel/TabsPanel";
+import { TabsPanel } from "./newUI/TabsPanel/TabsPanel";
 import { Staff } from "./newUI/Organisation/Staff";
 import { Check } from "./newUI/Organisation/Check";
 import { Settings } from "./newUI/Organisation/Settings";
@@ -41,7 +40,6 @@ const navigationData = [
 ];
 
 const App = () => {
-  const sx = { color: "white" };
   const initialTab = tabsInfo.length ? tabsInfo[0].url : null;
   const [currentTab, setCurrentTab] = useState(initialTab);
 
