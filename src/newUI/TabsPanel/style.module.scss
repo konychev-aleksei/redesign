@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: arial;
+  width: 240px;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+
+.toggler {
+  cursor: pointer;
+  height: auto;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  color: #9dafbd;
+  line-height: 24px;
+  display: flex;
+}
+
+.title {
+  flex: 1;
+}
+
+.plot {
+  flex-basis: 5px;
+  height: 5px;
+  margin-top: 9px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #f5a623;
+}
+
+.temp {
+  width: calc(100% - 40px);
+  height: 40px;
+  background: #26313a;
+  border-radius: 10px;
+  margin: 12px 0 5px 0;
+  padding: 5px 20px;
+  display: flex;
+}
+
+.temp > div {
+  padding-top: 11px;
+  color: white;
+  font-size: 16px;
+  font-family: arial;
+  flex: 1;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    margin-right: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,76 @@
+.wrapper {
+  width: 1140px;
+  height: 120px;
+  background-color: #26313a;
+  display: flex;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+  margin-left: 16px;
+  flex: 1;
+}
+
+.controls {
+  margin-top: 40px;
+  margin-right: 16px;
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: row-reverse;
+  height: 32px;
+  gap: 16px;
+}
+
+.button {
+  flex-basis: 160px !important;
+}
+
+.primary {
+  color: white;
+  font-size: 32px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.secondary {
+  color: white;
+  font-size: 24px;
+  font-family: arial;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .controls {
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    flex-basis: 32px;
+    padding: 5px;
+    gap: 10px;
+  }
+
+  .primary {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .secondary {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    flex-basis: 120px !important;
+  }
+}

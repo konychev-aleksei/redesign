@@ -1,0 +1,73 @@
+.wrapper {
+  width: 100%;
+  height: auto;
+  background: #26313a;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.form {
+  width: 100%;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  padding: 20px 0 0 20px;
+  font-family: arial;
+}
+
+.upperFields {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  padding: 20px;
+  gap: 20px;
+}
+
+.middleFields {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 280px 280px;
+  padding: 0 20px 20px 20px;
+  gap: 20px;
+}
+
+.lowerFields {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.longField {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+
+.button {
+  width: 160px;
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .upperFields,
+  .middleFields,
+  .lowerFields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    width: calc(100% - 40px);
+    margin: 10px 20px !important;
+  }
+}
